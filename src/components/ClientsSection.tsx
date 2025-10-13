@@ -2,14 +2,20 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 
+// Import client logos
+import dorcelLogo from '../assets/clientes/dorcel-logo.png';
+import enjoyXXLogo from '../assets/clientes/enjoyXX-removebg-preview.png';
+import kinkyyyyyyLogo from '../assets/clientes/kinkyyyyyy.png';
+import oldnannyLogo from '../assets/clientes/oldnanny.png';
+
 const ClientsSection: React.FC = () => {
   const { t } = useLanguage();
   
   const clients = [
-    { name: "Dorcel", logo: "/clientes/dorcel-logo.png" },
-    { name: "EnjoyXX", logo: "/clientes/enjoyXX-removebg-preview.png" },
-    { name: "Kinkyyyyyy", logo: "/clientes/kinkyyyyyy.png" },
-    { name: "OldNanny", logo: "/clientes/oldnanny.png" }
+    { name: "Dorcel", logo: dorcelLogo },
+    { name: "EnjoyXX", logo: enjoyXXLogo },
+    { name: "Kinkyyyyyy", logo: kinkyyyyyyLogo },
+    { name: "OldNanny", logo: oldnannyLogo }
   ];
 
   return (

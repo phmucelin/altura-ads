@@ -2,14 +2,20 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 
+// Import images
+import casinoChipImg from '../assets/img/casino-chip.png';
+import bitcoinImg from '../assets/img/bitcoin.png';
+import adultImg from '../assets/img/adult-18.png';
+import smartphoneImg from '../assets/img/smartphone.png';
+
 const AboutSection: React.FC = () => {
   const { t } = useLanguage();
   
   const sectors = [
-    { name: t('about.sectors.betting'), icon: "/img/casino-chip.png", description: t('about.sectors.betting.desc') },
-    { name: t('about.sectors.crypto'), icon: "/img/bitcoin.png", description: t('about.sectors.crypto.desc') },
-    { name: t('about.sectors.adult'), icon: "/img/-18.png", description: t('about.sectors.adult.desc') },
-    { name: t('about.sectors.mobile'), icon: "/img/smartphone.png", description: t('about.sectors.mobile.desc') }
+    { name: t('about.sectors.betting'), icon: casinoChipImg, description: t('about.sectors.betting.desc') },
+    { name: t('about.sectors.crypto'), icon: bitcoinImg, description: t('about.sectors.crypto.desc') },
+    { name: t('about.sectors.adult'), icon: adultImg, description: t('about.sectors.adult.desc') },
+    { name: t('about.sectors.mobile'), icon: smartphoneImg, description: t('about.sectors.mobile.desc') }
   ];
 
   const features = [

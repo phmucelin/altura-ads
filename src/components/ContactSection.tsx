@@ -2,6 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 
+// Import contact icons
+import telegramIcon from '../assets/img/telegrama.png';
+import whatsappIcon from '../assets/img/whatsapp.png';
+
 const ContactSection: React.FC = () => {
   const { t } = useLanguage();
   
@@ -19,14 +23,14 @@ const ContactSection: React.FC = () => {
     },
     {
       name: "Telegram",
-      icon: <img src="/img/telegrama.png" alt="Telegram" className="w-8 h-8" />,
+      icon: <img src={telegramIcon} alt="Telegram" className="w-8 h-8" />,
       link: "https://t.me/marcelocastro25",
       text: "@marcelocastro25",
       bgColor: "bg-blue-500"
     },
     {
       name: "WhatsApp",
-      icon: <img src="/img/whatsapp.png" alt="WhatsApp" className="w-8 h-8" />,
+      icon: <img src={whatsappIcon} alt="WhatsApp" className="w-8 h-8" />,
       link: "https://wa.me/5521974559987",
       text: "+55 21 97455-9987",
       bgColor: "bg-green-600"
