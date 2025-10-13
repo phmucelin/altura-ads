@@ -1,0 +1,458 @@
+/* Custom CSS for Altura Ads */
+
+/* Font Family */
+.font-inter {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Modern Animation Classes */
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-scale-in-delay {
+    animation: scaleIn 0.5s ease-out 0.2s both;
+}
+
+.animate-bounce-in {
+    animation: bounceIn 0.8s ease-out;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+}
+
+.animate-scale-in {
+    animation: scaleIn 0.6s ease-out;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Custom Components */
+.btn-primary {
+    @apply bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-colors duration-300 hover:text-blue-400;
+}
+
+.btn-secondary {
+    @apply bg-gray-800 text-blue-400 px-8 py-4 rounded-xl font-semibold text-lg transition-colors duration-300 hover:text-gray-100;
+}
+
+/* New Button Styles - Similar to the reference image */
+.btn-primary-new {
+    @apply bg-blue-600 text-white px-6 py-3 rounded-lg font-medium text-base border border-blue-600 transition-all duration-300 hover:bg-blue-700 hover:border-white hover:shadow-lg hover:shadow-blue-500/25;
+}
+
+.btn-secondary-new {
+    @apply bg-gray-900 text-white px-6 py-3 rounded-lg font-medium text-base border border-white transition-all duration-300 hover:bg-white hover:text-gray-900 hover:shadow-lg;
+}
+
+.service-card {
+    @apply bg-gray-800/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg transition-transform duration-150 hover:scale-105 transform;
+}
+
+.service-icon {
+    @apply text-4xl mb-4 animate-float;
+}
+
+.stat-card {
+    @apply bg-gray-800/60 backdrop-blur-sm rounded-xl p-8 shadow-md;
+}
+
+/* Removed stats card styles - now unified section */
+
+.client-logo {
+    @apply transition-all duration-150 hover:scale-110 transform;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #3b82f6, #6366f1);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #2563eb, #4f46e5);
+}
+
+/* Radix UI Dark Static Gradient Background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #09121c 0%, #0e1926 25%, #0b2748 50%, #003164 75%, #053e76 100%);
+    z-index: -1;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Hover Effects */
+.hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Glass Morphism Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Text Gradient */
+.text-gradient {
+    background: linear-gradient(135deg, #3b82f6, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Loading Animation */
+.loading-dots {
+    display: inline-block;
+}
+
+.loading-dots::after {
+    content: '';
+    animation: dots 1.5s infinite;
+}
+
+@keyframes dots {
+    0%, 20% {
+        content: '';
+    }
+    40% {
+        content: '.';
+    }
+    60% {
+        content: '..';
+    }
+    80%, 100% {
+        content: '...';
+    }
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    .text-5xl {
+        font-size: 2.5rem;
+    }
+    
+    .text-7xl {
+        font-size: 3rem;
+    }
+}
+
+/* Intersection Observer Animation Classes */
+.fade-in-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left-on-scroll {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.8s ease-out;
+}
+
+.slide-in-left-on-scroll.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-in-right-on-scroll {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.8s ease-out;
+}
+
+.slide-in-right-on-scroll.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Custom Focus States */
+.btn-primary:focus,
+.btn-secondary:focus {
+    outline: none;
+    ring: 2px solid rgba(59, 130, 246, 0.5);
+    ring-offset: 2px;
+}
+
+/* Mobile Menu Animation */
+.mobile-menu {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu.open {
+    transform: translateX(0);
+}
+
+/* Parallax Effect */
+.parallax {
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/* Custom Button Hover States - Similar to navbar */
+.btn-primary:hover {
+    color: rgb(0 108 241);
+}
+
+.btn-secondary:hover {
+    color: rgb(243 244 246);
+}
+
+/* Radix UI Card Gradient */
+.radix-gradient-card {
+    background: linear-gradient(135deg, #144c88, #276fbe, #0f8bff);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.15s ease;
+}
+
+.radix-gradient-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(15, 139, 255, 0.1), rgba(39, 111, 190, 0.1));
+    z-index: 1;
+}
+
+.radix-gradient-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Card Hover Effects */
+.service-card:hover {
+    /* Only scale effect, no background or border changes */
+}
+
+.stat-card:hover {
+    /* No hover effects for stat cards */
+}
+
+/* Custom Blue Color */
+.text-blue-400 {
+    --tw-text-opacity: 1;
+    color: rgb(0 108 241);
+}
+
+/* Connecting Line Effect */
+.stats-section {
+    position: relative;
+}
+
+.stats-section::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(0 108 241), transparent);
+    border-radius: 1px;
+    opacity: 0.6;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .stats-section::before {
+        display: none;
+    }
+}
+
+/* Process Steps Animation */
+.process-step {
+    @apply opacity-0 transform translate-y-8 transition-all duration-700 ease-out;
+}
+
+.process-step.visible {
+    @apply opacity-100 transform translate-y-0;
+}
+
+.process-step:nth-child(1) { transition-delay: 0.1s; }
+.process-step:nth-child(2) { transition-delay: 0.3s; }
+.process-step:nth-child(3) { transition-delay: 0.5s; }
+.process-step:nth-child(4) { transition-delay: 0.7s; }
+
+.step-number {
+    @apply transition-all duration-300 hover:scale-110 hover:shadow-xl;
+    box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.3);
+}
+
+.step-number:hover {
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);
+}
+
+/* Process Card Hover Effect */
+.process-step .bg-gray-800\/80 {
+    @apply transition-all duration-300 hover:bg-gray-700/80 hover:scale-105;
+}
+
+/* Smooth Transitions */
+* {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+}

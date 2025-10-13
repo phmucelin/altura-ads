@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altura Ads - Expert Ad Placement & Bespoke Retargeting Solutions</title>
+    <meta name="description" content="Expert ad placement and bespoke retargeting solutions. We help businesses scale intelligently through media buying and retargeting.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter bg-gray-900 text-gray-100 min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-md border-b border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-blue-400">
+                        Altura Ads
+                    </h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Services</a>
+                    <a href="#about" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">About</a>
+                    <a href="#contact" class="text-gray-300 hover:text-blue-400 transition-colors duration-300">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-blue-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="animate-fade-in-up">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    <span class="text-white">Mais usuários</span><br>
+                    <span class="text-blue-400">Mais receita</span><br>
+                    <span class="text-white">Zero custos iniciais</span>
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                    Capturamos novos leads para o seu negócio e aumentamos suas vendas. Sem custos iniciais. 
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#services" class="btn-primary">Explore Services</a>
+                    <a href="#contact" class="btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-20 stats-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Side - Text Content -->
+                <div class="space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-0.5 bg-blue-400"></div>
+                            <span class="text-sm text-gray-400 uppercase tracking-wider">Our Impact</span>
+                        </div>
+                        <h2 class="text-5xl md:text-6xl font-bold">
+                            <span class="text-blue-400">Liberdade</span>
+                            <span class="text-white"> para Anunciar</span>
+                        </h2>
+                        <p class="text-lg text-gray-300 leading-relaxed">
+                            <span class="text-white font-semibold">Poder para escalar de Verdade</span><br>
+                            Impulsionamos seus resultados expandindo sua base de leads qualificados. Sem custos iniciais. Investimos em você antes de ver qualquer retorno.
+                        </p>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#services" class="btn-primary-new">
+                            Quero gerar mais vendas
+                        </a>
+                        <a href="#contact" class="btn-secondary-new">
+                            Quero gerar mais leads
+                        </a>
+                        <a href="mailto:marcelo@altura-ads.com" class="text-blue-400 hover:text-white transition-colors duration-300 self-center sm:self-start">
+                            Fale com nossa equipe
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Stats Card -->
+                <div class="radix-gradient-card rounded-2xl p-8 text-white transform hover:scale-105">
+                    <div class="mb-6">
+                        <span class="text-xs text-blue-200 uppercase tracking-wider">Não fazemos promessas</span>
+                        <h3 class="text-2xl font-bold text-white mt-2">Entregamos resultados</h3>
+                        <p class="text-blue-100 text-sm mt-2">Tecnologia proprietária de retargeting que transforma cliques em conversões</p>
+                    </div>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-white rounded-full"></div>
+                            <span class="text-white text-sm">Alcance Global - Mais de 400 canais</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-white rounded-full"></div>
+                            <span class="text-white text-sm">Inteligência que Traz Resultados</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-white rounded-full"></div>
+                            <span class="text-white text-sm">Anuncie sem Barreiras</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Metrics -->
+                    <div class="grid grid-cols-3 gap-4">
+                        <div class="bg-white/20 rounded-lg p-4 text-center border border-white/30">
+                            <div class="text-2xl font-bold text-white mb-2">2B+</div>
+                            <div class="text-xs text-white uppercase">Monthly</div>
+                        </div>
+                        <div class="bg-white/20 rounded-lg p-4 text-center border border-white/30">
+                            <div class="text-2xl font-bold text-white mb-2">100+</div>
+                            <div class="text-xs text-white uppercase">Countries</div>
+                        </div>
+                        <div class="bg-white/20 rounded-lg p-4 text-center border border-white/30">
+                            <div class="text-2xl font-bold text-white mb-2">14</div>
+                            <div class="text-xs text-white uppercase">Years</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-100 mb-4">Our Services</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Optimize your business with our complete solution to scale intelligently and effectively
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card">
+                    <div class="service-icon text-blue-400 font-semibold text-lg">Global Markets</div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-3">All Geos and Markets</h3>
+                    <p class="text-gray-300">
+                        Our expertise and compliant solutions allow us to offer services in any markets and jurisdictions you wish to promote.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon text-blue-400 font-semibold text-lg">Smart Retargeting</div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-3">Ads & Retargeting</h3>
+                    <p class="text-gray-300">
+                        Our smart ad placement solutions and proprietary retargeting technology turns visitors into consumers.
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon text-blue-400 font-semibold text-lg">Revenue Share</div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-3">Budget-Friendly</h3>
+                    <p class="text-gray-300">
+                        Revenue Share model with no upfront fees. Save up to 18% of your budget while avoiding starting costs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-100 mb-4">Como Funciona</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Nosso processo de retargeting em 4 passos simples
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <!-- Step 1 -->
+                    <div class="process-step relative">
+                        <div class="bg-gray-800/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-700/50">
+                            <div class="flex items-center space-x-6">
+                                <div class="step-number w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl shadow-lg flex items-center justify-center flex-shrink-0">
+                                    <span class="text-2xl font-bold text-white">1</span>
+                                </div>
+                                <div class="flex-grow">
+                                    <p class="text-lg text-gray-200 leading-relaxed">
+                                        Os usuários pesquisam online os serviços e produtos de sua preferência.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Arrow pointing DOWN -->
+                        <div class="absolute left-1/2 top-full mt-2 transform -translate-x-1/2">
+                            <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process-step relative">
+                        <div class="bg-gray-800/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-700/50">
+                            <div class="flex items-center space-x-6">
+                                <div class="step-number w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl shadow-lg flex items-center justify-center flex-shrink-0">
+                                    <span class="text-2xl font-bold text-white">2</span>
+                                </div>
+                                <div class="flex-grow">
+                                    <p class="text-lg text-gray-200 leading-relaxed">
+                                        Os usuários visitam os sites, mas não convertem na primeira visita.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Arrow pointing DOWN -->
+                        <div class="absolute left-1/2 top-full mt-2 transform -translate-x-1/2">
+                            <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process-step relative">
+                        <div class="bg-gray-800/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-700/50">
+                            <div class="flex items-center space-x-6">
+                                <div class="step-number w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl shadow-lg flex items-center justify-center flex-shrink-0">
+                                    <span class="text-2xl font-bold text-white">3</span>
+                                </div>
+                                <div class="flex-grow">
+                                    <p class="text-lg text-gray-200 leading-relaxed">
+                                        Os usuários são alcançados em milhares de sites com nossos banners personalizados para incentivar o retorno.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Arrow pointing DOWN -->
+                        <div class="absolute left-1/2 top-full mt-2 transform -translate-x-1/2">
+                            <svg class="w-6 h-6 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="process-step relative">
+                        <div class="bg-gray-800/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-gray-700/50">
+                            <div class="flex items-center space-x-6">
+                                <div class="step-number w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-400 rounded-2xl shadow-lg flex items-center justify-center flex-shrink-0">
+                                    <span class="text-2xl font-bold text-white">4</span>
+                                </div>
+                                <div class="flex-grow">
+                                    <p class="text-lg text-gray-200 leading-relaxed">
+                                        O usuário retorna ao seu site e converte, gerando vendas e resultados.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-100 mb-6">Our Journey</h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        We are leaders in the affiliate marketing industry, focused on results and innovation. With a qualified team and cutting-edge technology, we operate in over 90 countries, impacting thousands of campaigns.
+                    </p>
+                    <p class="text-lg text-gray-300 mb-8">
+                        Our business model is based on Revenue Share, which means we grow alongside our partners, always striving to maximize results and ensure sustainable success.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                            <span class="text-gray-200">Media Buying & DSP</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                            <span class="text-gray-200">Advanced Retargeting</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+                            <span class="text-gray-200">Global Market Expertise</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:pl-8">
+                    <div class="radix-gradient-card rounded-2xl p-8 text-white transform hover:scale-105">
+                        <h3 class="text-2xl font-bold mb-4">Operating Sectors</h3>
+                        <p class="text-blue-100 mb-6">
+                            We operate strategically across various sectors, including adult websites, betting houses, crypto, and other dynamic markets.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white/10 rounded-lg p-4 text-center">
+                                <img src="img/casino-chip.png" alt="Betting" class="w-8 h-8 mx-auto mb-2">
+                                <div class="text-blue-200 font-semibold mb-2">Betting</div>
+                                <div class="text-xs text-blue-300">Sports & Casino</div>
+                            </div>
+                            <div class="bg-white/10 rounded-lg p-4 text-center">
+                                <img src="img/bitcoin.png" alt="Crypto" class="w-8 h-8 mx-auto mb-2">
+                                <div class="text-blue-200 font-semibold mb-2">Crypto</div>
+                                <div class="text-xs text-blue-300">Digital Assets</div>
+                            </div>
+                            <div class="bg-white/10 rounded-lg p-4 text-center">
+                                <img src="img/-18.png" alt="Adult" class="w-8 h-8 mx-auto mb-2">
+                                <div class="text-blue-200 font-semibold mb-2">Adult</div>
+                                <div class="text-xs text-blue-300">Entertainment</div>
+                            </div>
+                            <div class="bg-white/10 rounded-lg p-4 text-center">
+                                <img src="img/smartphone.png" alt="Mobile" class="w-8 h-8 mx-auto mb-2">
+                                <div class="text-blue-200 font-semibold mb-2">Mobile</div>
+                                <div class="text-xs text-blue-300">Apps & Games</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-100 mb-4">Our Clients</h2>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-4">
+                    Trusted by leading companies worldwide
+                </p>
+                <p class="text-sm text-gray-400 max-w-xl mx-auto">
+                    These are examples of our high-performing clients. We work with hundreds of companies across different sectors.
+                </p>
+            </div>
+            
+            <div class="flex justify-center">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-12 items-center justify-items-center max-w-4xl">
+                    <div class="client-logo">
+                        <img src="clientes/dorcel-logo.png" alt="Dorcel" class="w-32 h-20 object-contain opacity-70 hover:opacity-100 transition-opacity duration-150">
+                    </div>
+                    <div class="client-logo">
+                        <img src="clientes/enjoyXX-removebg-preview.png" alt="EnjoyXX" class="w-32 h-20 object-contain opacity-70 hover:opacity-100 transition-opacity duration-150">
+                    </div>
+                    <div class="client-logo">
+                        <img src="clientes/kinkyyyyyy.png" alt="Kinkyyyyyy" class="w-32 h-20 object-contain opacity-70 hover:opacity-100 transition-opacity duration-150">
+                    </div>
+                    <div class="client-logo">
+                        <img src="clientes/oldnanny.png" alt="OldNanny" class="w-32 h-20 object-contain opacity-70 hover:opacity-100 transition-opacity duration-150">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-100 mb-4">Get In Touch</h2>
+            <p class="text-xl text-gray-300 mb-8">
+                Ready to scale your business with our expert solutions?
+            </p>
+            <div class="bg-gray-800 rounded-2xl shadow-xl p-8 max-w-md mx-auto">
+                <div class="mb-6">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Contact Us</h3>
+                    <p class="text-gray-300 mb-4">Reach out via email</p>
+                </div>
+                <a href="mailto:marcelo@altura-ads.com" class="btn-primary w-full inline-block">
+                    marcelo@altura-ads.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4 text-blue-400">
+                    Altura Ads
+                </h3>
+                <p class="text-gray-400 mb-6">
+                    Expert ad placement and bespoke retargeting solutions for global markets.
+                </p>
+                <div class="border-t border-gray-800 pt-6">
+                    <p class="text-gray-500">
+                        © 2025 Altura Ads. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
