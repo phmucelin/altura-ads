@@ -112,7 +112,7 @@ const translations = {
     'stats.feature1': 'Alcance Global - Mais de 400 clientes',
     'stats.feature2': 'Inteligência que Traz Resultados',
     'stats.feature3': 'Anuncie sem Barreiras',
-    'stats.monthly': 'Acessos Mês',
+    'stats.monthly': 'Acessos Mensais',
     'stats.countries': 'Países',
     'stats.years': 'Anos',
     'services.title': 'Nossos Serviços',
