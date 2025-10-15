@@ -40,10 +40,10 @@ const translations = {
     'stats.promise': "We don't make promises",
     'stats.deliver': 'We deliver results',
     'stats.tech': 'Proprietary retargeting technology that transforms clicks into conversions',
-    'stats.feature1': 'Global Reach - Over 400 channels',
+    'stats.feature1': 'Global Reach - Over 400 clients',
     'stats.feature2': 'Intelligence that Brings Results',
     'stats.feature3': 'Advertise without Barriers',
-    'stats.monthly': 'Monthly',
+    'stats.monthly': 'Monthly Access',
     'stats.countries': 'Countries',
     'stats.years': 'Years',
     'services.title': 'Our Services',
@@ -84,7 +84,11 @@ const translations = {
     'about.sectors.adult.desc': 'Entertainment',
     'about.sectors.mobile': 'Mobile',
     'about.sectors.mobile.desc': 'Apps & Games',
-    'footer.description': 'Expert ad placement and bespoke retargeting solutions for global markets.'
+    'footer.description': 'Expert ad placement and bespoke retargeting solutions for global markets.',
+    'footer.copyright': '© 2025 Altura Ads. All rights reserved.',
+    'contact.email': 'E-mail',
+    'contact.telegram': 'Telegram',
+    'contact.whatsapp': 'WhatsApp'
   },
   pt: {
     'nav.services': 'Serviços',
@@ -105,10 +109,10 @@ const translations = {
     'stats.promise': 'Não fazemos promessas',
     'stats.deliver': 'Entregamos resultados',
     'stats.tech': 'Tecnologia proprietária de retargeting que transforma cliques em conversões',
-    'stats.feature1': 'Alcance Global - Mais de 400 canais',
+    'stats.feature1': 'Alcance Global - Mais de 400 clientes',
     'stats.feature2': 'Inteligência que Traz Resultados',
     'stats.feature3': 'Anuncie sem Barreiras',
-    'stats.monthly': 'Mensal',
+    'stats.monthly': 'Acessos Mês',
     'stats.countries': 'Países',
     'stats.years': 'Anos',
     'services.title': 'Nossos Serviços',
@@ -120,7 +124,7 @@ const translations = {
     'howitworks.step3': 'Os usuários são alcançados em milhares de sites com nossos banners personalizados para incentivar o retorno.',
     'howitworks.step4': 'O usuário retorna ao seu site e converte, gerando vendas e resultados.',
     'services.card1.title': 'Mercados Globais',
-    'services.card1.subtitle': 'Todas as Geografias e Mercados',
+    'services.card1.subtitle': 'Todas as Geos e Mercados',
     'services.card1.description': 'Nossa expertise e soluções em conformidade nos permitem oferecer serviços em qualquer mercado e jurisdição que você deseje promover.',
     'services.card2.title': 'Retargeting Inteligente',
     'services.card2.subtitle': 'Anúncios e Retargeting',
@@ -149,14 +153,18 @@ const translations = {
     'about.sectors.adult.desc': 'Entretenimento',
     'about.sectors.mobile': 'Mobile',
     'about.sectors.mobile.desc': 'Apps e Jogos',
-    'footer.description': 'Soluções especializadas em posicionamento de anúncios e retargeting personalizado para mercados globais.'
+    'footer.description': 'Soluções especializadas em posicionamento de anúncios e retargeting personalizado para mercados globais.',
+    'footer.copyright': '© 2025 Altura Ads. Todos os direitos reservados.',
+    'contact.email': 'E-mail',
+    'contact.telegram': 'Telegram',
+    'contact.whatsapp': 'WhatsApp'
   }
 };
 
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   const [language, setLanguage] = useState<'en' | 'pt'>(() => {
     const savedLanguage = localStorage.getItem('language');
-    return (savedLanguage as 'en' | 'pt') || 'pt'; // Default to Portuguese
+    return (savedLanguage as 'en' | 'pt') || 'en'; // Default to English
   });
 
   useEffect(() => {

@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
           </p>
           <div className="border-t border-gray-800 pt-6">
             <p className="text-gray-500">
-              © 2025 Altura Ads. All rights reserved.
+              {t('footer.copyright')}
             </p>
           </div>
         </motion.div>

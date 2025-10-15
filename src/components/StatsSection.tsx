@@ -48,14 +48,6 @@ const StatsSection: React.FC = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {t('stats.cta2')}
-              </motion.a>
-              <motion.a 
-                href="mailto:marcelo@altura-ads.com" 
-                className="text-blue-400 hover:text-white transition-colors duration-300 self-center sm:self-start"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
                 {t('stats.contact')}
               </motion.a>
             </div>

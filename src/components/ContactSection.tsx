@@ -5,31 +5,28 @@ import { useLanguage } from '../contexts/LanguageContext';
 // Import contact icons
 import telegramIcon from '../assets/img/telegrama.png';
 import whatsappIcon from '../assets/img/whatsapp.png';
+import gmailIcon from '../assets/img/gmail.png';
 
 const ContactSection: React.FC = () => {
   const { t } = useLanguage();
   
   const contactMethods = [
     {
-      name: "Email",
-      icon: (
-        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-        </svg>
-      ),
+      name: t('contact.email'),
+      icon: <img src={gmailIcon} alt="Gmail" className="w-8 h-8" />,
       link: "mailto:marcelo@altura-ads.com",
       text: "marcelo@altura-ads.com",
       bgColor: "bg-blue-600"
     },
     {
-      name: "Telegram",
+      name: t('contact.telegram'),
       icon: <img src={telegramIcon} alt="Telegram" className="w-8 h-8" />,
       link: "https://t.me/marcelocastro25",
       text: "@marcelocastro25",
       bgColor: "bg-blue-500"
     },
     {
-      name: "WhatsApp",
+      name: t('contact.whatsapp'),
       icon: <img src={whatsappIcon} alt="WhatsApp" className="w-8 h-8" />,
       link: "https://wa.me/5521974559987",
       text: "+55 21 97455-9987",
@@ -64,26 +61,20 @@ const ContactSection: React.FC = () => {
               whileHover={{ scale: 1.02 }}
             >
               <div className="mb-6">
-                <motion.div 
-                  className={`w-16 h-16 ${method.bgColor} rounded-full mx-auto mb-4 flex items-center justify-center`}
+                <motion.a 
+                  href={method.link}
+                  target={method.name !== t('contact.email') ? "_blank" : undefined}
+                  rel={method.name !== t('contact.email') ? "noopener noreferrer" : undefined}
+                  className={`w-16 h-16 ${method.bgColor} rounded-full mx-auto mb-4 flex items-center justify-center cursor-pointer`}
                   whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   {method.icon}
-                </motion.div>
+                </motion.a>
                 <h3 className="text-xl font-semibold text-gray-100 mb-2">
                   {method.name}
                 </h3>
               </div>
-              <motion.a 
-                href={method.link}
-                target={method.name !== "Email" ? "_blank" : undefined}
-                rel={method.name !== "Email" ? "noopener noreferrer" : undefined}
-                className="btn-primary w-full inline-block"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {method.text}
-              </motion.a>
             </motion.div>
           ))}
         </div>

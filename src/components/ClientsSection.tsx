@@ -23,7 +23,7 @@ const ClientsSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           className="text-center mb-16"
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0.5, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
@@ -43,19 +43,19 @@ const ClientsSection: React.FC = () => {
               <motion.div 
                 key={index}
                 className="client-logo"
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0.5, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 whileHover={{ 
                   scale: 1.1,
-                  transition: { duration: 0.2 }
+                  transition: { duration: 0.15, ease: "easeOut" }
                 }}
               >
                 <img 
                   src={client.logo} 
                   alt={client.name} 
-                  className="w-32 h-20 object-contain opacity-70 hover:opacity-100 transition-opacity duration-150" 
+                  className="w-40 h-24 object-contain opacity-90 hover:opacity-100 transition-all duration-200 ease-out" 
                 />
               </motion.div>
             ))}
